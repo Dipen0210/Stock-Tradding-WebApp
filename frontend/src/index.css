@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .custom-scrollbar::-webkit-scrollbar{
+        width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track{
+        background: transparent;
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar-thumb{
+        background-color: rgb(17, 216, 247);
+        width: 5px;
+        border-radius: 10px;
+    }
+
+    .custom-scrollbar-dark::-webkit-scrollbar-thumb{
+        background-color: rgb(2, 89, 117);
+    }
+}
+
+.modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    z-index: 50;
+  }
+  
+  .overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dimmed overlay */
+    z-index: 40;
+  }
+  
